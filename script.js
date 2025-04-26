@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+//Parceiros Furia
+
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -70,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-/* Para o blur dos cards da lineup */ 
+// para o blur dos cards da lineup
 
 const lineupContainer = document.querySelector('.lineup-conteiner');
 const jogadores = document.querySelectorAll('.lineup-jogador');
@@ -84,5 +86,25 @@ jogadores.forEach(jogador => {
   jogador.addEventListener('mouseleave', () => {
     lineupContainer.classList.remove('focando');
     jogador.classList.remove('ativo');
+  });
+});
+
+
+//menu responsivo abrir/fechar
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('#menu');
+  const nav = document.querySelector('#nav');
+
+  let isOpen = false;
+
+  menu.addEventListener('click', () => {
+      if (!isOpen) {
+          nav.classList.add('ativo');
+          isOpen = true;
+      } else {
+          nav.classList.remove('ativo');
+          isOpen = false;
+      }
   });
 });

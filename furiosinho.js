@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         msgDiv.classList.add('message', sender);
         msgDiv.textContent = message;
         chatBox.appendChild(msgDiv);
-        chatBox.scrollTop = chatBox.scrollHeight; // rola pra última mensagem
+        chatBox.scrollTop = chatBox.scrollHeight; 
     }
 
     function furiosinhoResponder(mensagemUsuario) {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         const msg = mensagemUsuario.toLowerCase();
     
-        // Cumprimentos (não alterar)
+       
         if (msg.includes("oi") || msg.includes("olá") || msg.includes("salve") || msg.includes("eae") || msg.includes("opa") || msg.includes("e ai")) {
             resposta = "E aí, fã da FURIA! 🐆🔥";
     
