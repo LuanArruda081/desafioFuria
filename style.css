@@ -290,11 +290,14 @@ nav ul li a:hover::after {
 #furiosinho{
     background-color: #1b1c1b;
     min-height: 60vh;
+    display: flex;
+    justify-content: center;
 }
 
 .furiosinho-conteiner{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 70px;
 }
 
