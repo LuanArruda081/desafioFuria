@@ -368,7 +368,7 @@ nav ul li a:hover::after {
     background-color: #a200ec;
     color: #fff;
     align-self: flex-end;
-    text-align: right;
+    text-align: left;
     margin-left: auto;
 }
 

@@ -17,12 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const msg = mensagemUsuario.toLowerCase();
     
        
-        if (msg.includes("oi") || msg.includes("olá") || msg.includes("salve") || msg.includes("eae") || msg.includes("opa") || msg.includes("e ai")) {
+        if (msg.includes("oi") || msg.includes("olá") || msg.includes("fala") || msg.includes("salve") || msg.includes("eae") || msg.includes("opa") || msg.includes("e ai")) {
             resposta = "E aí, fã da FURIA! 🐆🔥";
     
         // Elenco
         } else if (msg.includes("cs") || msg.includes("line-up") || msg.includes("elenco") || msg.includes("equipe") || msg.includes("jogadores")) {
             resposta = "Nosso elenco atual é pura bala! é Fallen, KSCERATO, yuurih, chelo e skullz";
+
+        } else if (msg.includes("fallen") || msg.includes("gabriel toledo")) {
+            resposta = "Fallenzão é brabo, né? Meu ídolo!";
+    
+        } else if (msg.includes("valeu") || msg.includes("obrigado") || msg.includes("obg")) {
+            resposta = "Por nada, se tiver mais dúvidas sobre a Furia é só chamar, tá?";
+    
+        } else if (msg.includes("bom dia") || msg.includes("boa noite") || msg.includes("boa tarde")) {
+            resposta = "Saalveee, com o que posso te ajudar?";
     
         // Loja / Produtos
         } else if (msg.includes("loja") || msg.includes("camisa") || msg.includes("roupa") || msg.includes("manto") || msg.includes("produtos")) {
